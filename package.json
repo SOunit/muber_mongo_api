@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "SET NODE_ENV=test | nodemon -L --exec mocha --recursive -R min",
-    "start": "nodemon -L"
+    "test": "SET NODE_ENV=test | nodemon --exec mocha --recursive -R min",
+    "start": "nodemon"
   },
   "author": "",
   "license": "ISC",

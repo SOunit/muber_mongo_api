@@ -3,9 +3,7 @@ const mongoose = require('mongoose');
 before((done) => {
   mongoose.connect('mongodb://localhost/muber_test');
   mongoose.connection
-    .once('open', () => {
-      return done();
-    })
+    .once('open', () => done())
     .on('error', (err) => {
       console.warn('Warning', err);
     });
